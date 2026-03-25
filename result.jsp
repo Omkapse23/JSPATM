@@ -54,7 +54,7 @@
 
     <p><%= message %></p>
 
-    <a href="menu.jsp"><button>Back to Menu</button></a>
+    <a href="menu.jsp?pin=<%= pin %>"><button>Back to Menu</button></a>
 </div>
 
 </body>
