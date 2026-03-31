@@ -20,10 +20,11 @@
     <form action="result.jsp" method="post">
         <input type="hidden" name="action" value="<%= action %>">
 
-        Enter Amount
-        <input type="number" name="amount">
-
-        <br><br>
+        <% if(!"balance".equals(action)) { %>
+            Enter Amount
+            <input type="number" name="amount">
+            <br><br>
+        <% } %>
 
         Enter PIN Again
         <input type="password" name="pin" required>
